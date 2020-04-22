@@ -15,7 +15,7 @@ class Appointment
   end
   
   def patient
-    Patient.appointment
+    Patient.appointments
   end
   
   def doctors
