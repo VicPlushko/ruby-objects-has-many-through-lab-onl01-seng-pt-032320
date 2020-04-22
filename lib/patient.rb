@@ -1,5 +1,5 @@
 class Patient
-  attr_accessor :name, :appointment, :doctor
+  attr_accessor :name
   
   @@all = []
   
@@ -21,6 +21,6 @@ class Patient
   end
 
   def new_appointment(date, doctor)
-    Appointment.new(self, date, doctor)
+    Appointment.new(date, doctor, self)
   end
 end
